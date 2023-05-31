@@ -1,0 +1,133 @@
+:root {
+/*### Primary*/
+
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+
+/*### Neutral*/
+
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        font-family: 'League Spartan', sans-serif;
+    }
+    
+    h1 {
+        color: var(--Very-Dark-Magenta);
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'League Spartan', sans-serif;
+    }
+    
+    .header-text {
+        color: var(--Dark-Grayish-Magenta);
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: 'League Spartan', sans-serif;
+    }
+    
+    .navegation {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .Reviews,
+    .Report,
+    .BestTech {
+        border: 1px solid hsl(300, 24%, 96%);
+        border-radius: 10px;
+        background-color: var(--Light-Grayish-Magenta);
+        padding: 1.2rem;
+        text-decoration: none;
+    }
+    
+    .star-one, 
+    .star-two,
+    .star-three {
+        letter-spacing: 0.5rem;
+        margin-left: 5rem;
+    }
+    
+    .text-reviews,
+    .text-report,
+    .text-besttech {
+        text-align: center;
+        text-decoration: none;
+        color: var(--Very-Dark-Magenta);
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .colton,
+    .irene,
+    .anne {
+        background-color: var(--Very-Dark-Magenta);
+        padding: 2.5rem;
+        border: 1px solid hsl(300, 43%, 22%);
+        border-radius: 10px;
+    }
+
+    .title-colton,
+    .title-irene,
+    .title-anne {
+        display: grid;
+        gap: 5px;
+    }
+
+    .image-colton,
+    .image-irene,
+    .image-anne {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: inline;
+        border-radius: 100px;
+    }
+    .name-colton,
+    .name-irene,
+    .name-anne {
+        margin-right: 3rem;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 1rem;
+        color: var(--White);
+    }
+
+    .colton-buyer,
+    .irene-buyer,
+    .anne-buyer {
+        margin-right: 3rem;
+        margin-top: 2rem;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 1rem;
+        color: var(--Soft-Pink);
+    }
+
+    .text-colton,
+    .text-irene,
+    .text-anne {
+        color: var(--White);
+        font-size: 1rem;
+    }
+}
